@@ -150,7 +150,7 @@ namespace NPOI.HSSF.UserModel
             }
 
             // are all other characters valid?
-            allowedSymbols = "_\\"; //backslashes needed for unicode escape
+            allowedSymbols = "_\\."; //backslashes needed for unicode escape
             foreach (char ch in name.ToCharArray())
             {
                 characterIsValid = (char.IsLetterOrDigit(ch) || allowedSymbols.IndexOf(ch) != -1);
